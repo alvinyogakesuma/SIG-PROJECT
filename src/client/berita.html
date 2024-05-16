@@ -11,7 +11,7 @@
     />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Leaflet Map with Sidebar</title>
+    <title>Berita</title>
     <style>
       /* Sidebar styling */
       .sidebar {
@@ -144,6 +144,7 @@
         <!-- Login button -->
         <div class="login-button">
           <button
+            onclick="Login()"
             class="btn-login"
             style="
               display: flex;
@@ -264,6 +265,10 @@
 
         sidebar.classList.toggle("closed");
         mapContainer.classList.toggle("closed");
+      }
+      
+      function Login() {
+            window.location.href = '../client/login.html';
       }
 
       feather.replace();

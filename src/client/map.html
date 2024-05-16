@@ -11,7 +11,7 @@
     />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Leaflet Map with Sidebar</title>
+    <title>Maps</title>
     <style>
       /* Sidebar styling */
       .sidebar {
@@ -144,6 +144,7 @@
         <!-- Login button -->
         <div class="login-button">
           <button
+            onclick="Login()"
             class="btn-login"
             style="
               display: flex;
@@ -153,7 +154,7 @@
               margin: 20px auto;
               border-radius: 5px;
               color: #ffffff;
-              background-color: #5EBC67;
+              background-color: #5ebc67;
               border: none;
               font-weight: bold;
               cursor: pointer;
@@ -164,7 +165,6 @@
           </button>
         </div>
         <!-- End Login button -->
-
       </div>
     </div>
 
@@ -214,6 +214,10 @@
 
         sidebar.classList.toggle("closed");
         mapContainer.classList.toggle("closed");
+      }
+
+      function Login() {
+        window.location.href = "../client/login.html";
       }
     </script>
   </body>
